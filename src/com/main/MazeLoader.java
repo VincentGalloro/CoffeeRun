@@ -22,7 +22,7 @@ public class MazeLoader {
                 }
             }
         }
-        double thicc = 1;
+        double thiccc = 1;
         for(int y = 0; y < img.getHeight(); y++){
             int x = 0;
             while(x < img.getWidth()){
@@ -30,7 +30,7 @@ public class MazeLoader {
                     int s = 1;
                     while(x+s < img.getWidth() && wall[x+s][y]){ s++; }
                     if(s > 1){
-                        l.wh.walls.add(new Wall(x*scaleX + (s*scaleX)/2, (y+thicc/2)*scaleY, (int)(s*scaleX), (int)(scaleY*thicc)));
+                        l.wh.walls.add(new Wall(x*scaleX + (s*scaleX)/2, (y+thiccc/2)*scaleY, (int)(s*scaleX), (int)(scaleY*thiccc)));
                     }
                     x += s;
                 }
@@ -44,7 +44,7 @@ public class MazeLoader {
                     int s = 1;
                     while(y+s < img.getHeight() && wall[x][y+s]){ s++; }
                     if(s > 1){
-                        l.wh.walls.add(new Wall((x+thicc/2)*scaleX, y*scaleY + (s*scaleY)/2, (int)(scaleX*thicc), (int)(s*scaleY)));
+                        l.wh.walls.add(new Wall((x+thiccc/2)*scaleX, y*scaleY + (s*scaleY)/2, (int)(scaleX*thiccc), (int)(s*scaleY)));
                     }
                     y += s;
                 }
